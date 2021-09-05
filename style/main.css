@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Fraunces" ;
+  src: url("../font/Fraunces.ttf") ;
+}
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url("../font/Barlow-Medium.ttf");
+}
+* {
+  box-sizing: border-box ;
+  font-family: "Barlow-Medium" ;
+  font-size: 16px ;
+}
+body {
+  margin: 0 ;
+}
+header {
+  height: 500px ;
+  padding: 20px ;
+  background-image: url("../images/mobile/image-header.jpg") ;
+  background-size: 100% ;
+}
+header nav {
+  display: flex ;
+  align-items: center ;
+  justify-content: space-between ;
+  flex-wrap: wrap ;
+  position: relative ;
+}
+header nav div {
+  display: none ;
+  width: 100% ;
+  padding: 20px ;
+  border-radius: 2px 0 2px ;
+  background-color: white ;
+  position: absolute ;
+  top: 80px ;
+}
+header nav div:after {
+  content: "" ;
+  border: 10px solid ;
+  border-color: transparent white white transparent ;
+  position: absolute ;
+  top: -20px ;
+  right: 0 ;
+}
+header nav div span {
+  width: 40% ;
+  border-radius: 30px ;
+  font-size: 14px ;
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center ;
+  margin: 10px auto ;
+  padding: 10px ;
+  flex-flow: column ;
+}
+header nav div span.active {
+  background-color: hsl(51,100%,49%) ;
+}
+header nav div span.active a {
+  color: hsl(212, 27%, 19%) ;
+  font-weight: bold ;
+  text-transform: uppercase ;
+}
+header nav div span a {
+  font-size: 18px ;
+  text-decoration: none ;
+  color: hsl(232, 10%, 55%) ;
+}
+header > div h1 {
+  font-family: "Fraunces" ;
+  width: 100% ;
+  margin-top: 80px ;
+  margin-bottom: 30px ;
+  text-align: center ;
+  letter-spacing: 4px ;
+  color: white ;
+  text-transform: uppercase ;
+  font-weight: bolder ;
+  font-size: 40px ;
+}
+header > div img {
+  width: 12% ;
+  margin: 0 44% ;
+}
+.attribution {
+  font-size: 10px;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

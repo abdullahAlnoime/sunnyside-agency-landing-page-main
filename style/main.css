@@ -219,13 +219,13 @@ section:first-of-type div button:after {
   background-color: hsla(51, 100%, 49%, 0.3);
   position: absolute;
   z-index: -1;
-  bottom: 6px;
+  bottom: 2% ;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
   border-radius: 30px;
 }
 
-section:first-of-type div button:hover:after {
+section:first-of-type div > div button:hover:after {
   background-color: hsl(51, 100%, 49%);
 }
 
@@ -280,9 +280,11 @@ section:first-of-type div:last-of-type>div button:hover:after {
     text-align: left;
     font-size: 14px;
   }
-
-  section:first-of-type div button:after {
-    bottom: 12px;
+  section:first-of-type div:first-of-type>div button:after {
+    bottom: 18%;
+  }
+  section:first-of-type div:last-of-type > div  button:after {
+    bottom: 10% ;
   }
 }
 
